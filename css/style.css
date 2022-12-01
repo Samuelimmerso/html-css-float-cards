@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.column::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+:root{
+    --title: #E5316F;
+    --main-margin: 3rem 10rem 10rem 10rem;
+    --bg-color: #100E17;
+}
+
+/* Generics */
+
+body{
+    font-family: 'Fredoka', sans-serif;
+}
+
+header{
+    text-align: center;
+}
+
+header{
+    font-weight: bolder;
+    color: var(--title);
+}
+
+.main-container{
+    margin: var(--main-margin);
+}
+
+.column{
+    height: 8rem;
+    background-color: var(--bg-color) ;
+    display: inline-block;
+}
+
+img{
+    max-height: 100%;
+}
+
+
+
+
