@@ -1,49 +1,78 @@
+/* Reset CSS */
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-.column::after{
-    content: '';
-    clear: both;
-    display: table;
+    font-family: 'Fredoka', sans-serif;
 }
 
 :root{
     --title: #E5316F;
-    --main-margin: 3rem 10rem 10rem 10rem;
-    --bg-color: #100E17;
+    --main-margin: 3rem 8rem 8rem 8rem;
+    --empl-bg-color: #100E17;
+    --link-color: #52B5E2;
 }
+
+.column::after, .row::after{
+    content: '';
+    clear: both;
+    display: table;
+} 
 
 /* Generics */
 
-body{
-    font-family: 'Fredoka', sans-serif;
-}
-
-header{
+header,p{
     text-align: center;
 }
 
 header{
-    font-weight: bolder;
     color: var(--title);
 }
 
-.main-container{
+main{
     margin: var(--main-margin);
 }
 
+
+
+/* employee description */
+
+.row{
+    padding: -2rem;
+}
+
 .column{
-    height: 8rem;
-    background-color: var(--bg-color) ;
-    display: inline-block;
+    background-color: var(--empl-bg-color) ;
+    color: white;
+    float: left;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 img{
-    max-height: 100%;
+    width: 100px;
+    float: left;
 }
+
+h3,section{
+    display: inline-block;
+}
+
+section{
+    padding: .5rem 1rem 0 1rem;
+}
+
+h3,span{
+    font-size: .7rem;
+    line-height: 1.8rem;
+}
+
+a{
+    text-decoration: none;
+    color: var(--link-color);
+}
+
 
 
 
