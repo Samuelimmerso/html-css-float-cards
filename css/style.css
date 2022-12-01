@@ -9,7 +9,6 @@
 
 :root{
     --title: #E5316F;
-    --main-margin: 3rem 8rem 8rem 8rem;
     --empl-bg-color: #100E17;
     --link-color: #52B5E2;
 }
@@ -28,30 +27,31 @@ header,p{
 
 header{
     color: var(--title);
-}
-
-main{
-    margin: var(--main-margin);
+    margin: 2rem;
 }
 
 
 
 /* employee description */
 
+main{
+    margin: 0 7rem;
+}
+
 .row{
-    padding: -2rem;
+    margin-top: 2rem;
 }
 
 .column{
     background-color: var(--empl-bg-color) ;
     color: white;
     float: left;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    height: 90px;
+    width: calc(100%/3);
 }
 
 img{
-    width: 100px;
+    height: 100%;
     float: left;
 }
 
@@ -60,12 +60,12 @@ h3,section{
 }
 
 section{
-    padding: .5rem 1rem 0 1rem;
+    padding: .3rem .5rem 0 .5rem;
 }
 
 h3,span{
-    font-size: .7rem;
-    line-height: 1.8rem;
+    font-size: .8rem;
+    line-height: 1.6rem;
 }
 
 a{
